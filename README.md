@@ -3,6 +3,14 @@ CS_5700 project_3 analysis performance of different TCPs （TCP Tahoe, Reno, New
 
 Use NS-2 network simulator to perform experiments that will help to analyze the behavior of TCP variants
 
+                         N1                      N4
+                           \                    /
+                            \                  /
+                             N2--------------N3
+                            /                  \
+                           /                    \
+                         N5                      N6
+
 Experiment 1: TCP Performance Under Congestion
 Analyze the performance of TCP variants (Tahoe, Reno, NewReno, and Vegas) under the influence of various load conditions.
 Add a CBR source at N2 and a sink at N3, then add a single TCP stream from N1 to a sink at N4. Analyze the throughput, packet drop rate, and latency of the TCP stream as a function of the bandwidth used by the CBR flow. 
